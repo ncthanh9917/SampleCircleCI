@@ -19,29 +19,4 @@ jobs:
       #- run: npm --versions
       #- run: yarn --version
       #- run: .circleci/build.sh
-      - run:
-          name: Build souce code & compile test project
-          command: docker-compose run --rm gondola.builder
-          working_directory: tests
-      - run:
-          name: run all tests
-          command: docker-compose run --rm gondola.tester
-          working_directory: tests
-          environment:
-            BROWSER: << parameters.browser >>
-      - store_test_results:
-          path: tests/results/
-      - store_artifacts:
-          path: tests/results
-          destination: results
-
-workflows:
-  test:
-    jobs:
-      - test:
-          context: Gondola License
-          matrix:
-            parameters:
-              browser:
-                - chrome
-                - firefox
+      - run: npm test
