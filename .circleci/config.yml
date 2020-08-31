@@ -8,6 +8,13 @@ orbs:
 jobs:
   build:
     executor: win/default
+    parameters:
+      replace-existing:
+        default: true
+        description: >
+          If there is an existing installation of Google Chrome, replace it with the
+          latest stable release?
+        type: boolean
     steps:
       - checkout
       #- node/install:
