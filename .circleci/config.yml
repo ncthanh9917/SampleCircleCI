@@ -6,7 +6,7 @@ orbs:
 
 jobs:
   build:
-    executor: win/latest
+    executor: win/default
     steps:
       - checkout
       #- node/install:
@@ -15,4 +15,6 @@ jobs:
       #- run: npm --versions
       #- run: yarn --version
       #- run: .circleci/build.sh
+      - run: npm i webdriver-manager
+      - run: .\node_modules\webdriver-manager install
       - run: npm run test:chrome -- --licenseToken 9338F7CF223C0DD1D72E7A074425D017A2964CD20444F8227C23571CC674947C
