@@ -6,7 +6,7 @@ orbs:
 jobs:
   build:
     machine:
-      image: 'circleci/classic:latest'
+      image: windows-server-2019-nvidia:stable
     parameters:
       browser:
         type: string
@@ -19,4 +19,6 @@ jobs:
       #- run: npm --versions
       #- run: yarn --version
       #- run: .circleci/build.sh
-      - run: sudo ./node_modules/.bin/gondola -c gondola.chrome.json run --steps --reporter mochawesome
+      - run: 
+        command: ./node_modules/.bin/gondola -c gondola.chrome.json run --steps --reporter mochawesome
+        working_directory: tests
