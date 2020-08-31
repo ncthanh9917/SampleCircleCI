@@ -19,4 +19,4 @@ jobs:
       #- run: npm --versions
       #- run: yarn --version
       #- run: .circleci/build.sh
-      - run: npm run test:chrome
+      - run: ./node_modules/.bin/gondola -c gondola.chrome.json run --steps --reporter mochawesome
