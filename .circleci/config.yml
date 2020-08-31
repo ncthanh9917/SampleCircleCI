@@ -15,4 +15,4 @@ jobs:
       #- run: npm --versions
       #- run: yarn --version
       #- run: .circleci/build.sh
-      - run: ./node_modules/.bin/gondola -c gondola.chrome.json run --licenseToken=9338F7CF223C0DD1D72E7A074425D017A2964CD20444F8227C23571CC674947C --steps --reporter mochawesome
+      - run: npm run test:chrome
