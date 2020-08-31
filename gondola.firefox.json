@@ -34,7 +34,7 @@
     },
     "mocha": {
         "reporterOptions": {
-            "reportDir": "results/GeneralMills/FireFox",
+            "reportDir": "results/FireFox",
             "inlineAssets": true,
             "timestamp": "isoDateTime",
             "reportFilename": "[Firefox]GeneralMills_demo_report",

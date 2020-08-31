@@ -45,13 +45,13 @@
     },
     "mocha": {
         "reporterOptions": {
-            "reportDir": "results/GeneralMills/Chrome",
+            "reportDir": "results/MobileWeb",
             "inlineAssets": true,
             "timestamp": "isoDateTime",
-            "reportFilename": "[Chrome]GeneralMills_demo_report",
+            "reportFilename": "[MobileWeb]GeneralMills_demo_report",
             "autoOpen": true,
-            "reportPageTitle": "[Chrome]GeneralMills_demo_report"
+            "reportPageTitle": "[MobileWeb]GeneralMills_demo_report"
         }
     },
-    "name": "ts_example_chrome"
+    "name": "ts_example_mobile_web"
 }

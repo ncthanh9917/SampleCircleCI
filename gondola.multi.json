@@ -29,18 +29,31 @@
             "services": [
                 "selenium-standalone"
             ],
+            "seleniumArgs": {
+                "javaArgs": ["-Dwebdriver.edge.driver=F:/softwares/webdrivers/edgedriver_84/msedgedriver.exe"]
+            },
             "enabled": true
         }
     },
     "mocha": {
         "reporterOptions": {
-            "reportDir": "results/Chrome",
+            "reportDir": "results/Multi",
             "inlineAssets": true,
             "timestamp": "isoDateTime",
-            "reportFilename": "[Chrome]GeneralMills_demo_report",
+            "reportFilename": "[Multi]GeneralMills_demo_report",
             "autoOpen": true,
-            "reportPageTitle": "[Chrome]GeneralMills_demo_report"
+            "reportPageTitle": "[Multi]GeneralMills_demo_report"
         }
     },
-    "name": "ts_example_firefox"
+    "name": "ts_example_multi",
+    "multiple": {
+        "regression": {
+            "chunks": 2,
+            "browsers": [
+                "chrome",
+                "firefox",
+                "MicrosoftEdge"
+            ]
+        }
+    }
 }
