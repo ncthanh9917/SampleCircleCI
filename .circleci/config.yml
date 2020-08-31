@@ -1,7 +1,47 @@
 version: 2.1
+
 orbs:
-  node: circleci/node@3.0.0
+  node: circleci/node@4.0.0
+
+jobs:
+  test:
+    machine:
+      image: 'circleci/classic:latest'
+    parameters:
+      browser:
+        type: string
+        default: chrome
+    steps:
+      - checkout
+      #- node/install:
+      #    install-yarn: true
+      #    lts: true
+      #- run: npm --versions
+      #- run: yarn --version
+      #- run: .circleci/build.sh
+      - run:
+          name: Build souce code & compile test project
+          command: docker-compose run --rm gondola.builder
+          working_directory: tests
+      - run:
+          name: run all tests
+          command: docker-compose run --rm gondola.tester
+          working_directory: tests
+          environment:
+            BROWSER: << parameters.browser >>
+      - store_test_results:
+          path: tests/results/
+      - store_artifacts:
+          path: tests/results
+          destination: results
+
 workflows:
-  node-tests:
+  test:
     jobs:
-      - node/test
+      - test:
+          context: Gondola License
+          matrix:
+            parameters:
+              browser:
+                - chrome
+                - firefox
