@@ -6,7 +6,7 @@ orbs:
 
 jobs:
   build:
-    executor: win/default
+    executor: win/latest
     steps:
       - checkout
       #- node/install:
