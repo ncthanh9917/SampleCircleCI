@@ -1,0 +1,29 @@
+{
+    "name": "websample",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "postinstall": "selenium-standalone install",
+        "clean": "rimraf built",
+        "clean-dev": "./node_modules/.bin/tsc -b --clean --dev",
+        "compile": "npm run clean && tsc",
+        "test:chrome": "./node_modules/.bin/gondola -c gondola.chrome.json run --steps --reporter mochawesome",
+        "test:firefox": "./node_modules/.bin/gondola -c gondola.firefox.json run --steps --reporter mochawesome",
+        "test:edge": "./node_modules/.bin/gondola -c gondola.edge.json run --steps --reporter mochawesome"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "gondolajs": "./lib/gondolajs-1.6.64.tgz",
+        "mochawesome": "^4.1.0",
+        "rimraf": "3.0.2",
+        "webdriver-manager": "^12.1.7",
+        "webdriverio": "^5.18.4"
+    },
+    "devDependencies": {
+        "@wdio/selenium-standalone-service": "^5.0.0",
+        "@types/node": "^12.12.15",
+        "typescript": "^3.7.3"
+    }
+}

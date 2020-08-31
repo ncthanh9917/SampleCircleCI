@@ -1,0 +1,207 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2020-08-28T02:48:49.900Z",
+    "end": "2020-08-28T02:49:41.270Z",
+    "duration": 51370,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4b21c232-1525-4c1a-b9b3-37f0413bcefb",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "271ca83c-048f-4963-92c8-a1948cc9de00",
+          "title": "WebDriver sample tests",
+          "fullFile": "f:\\GondolaProjects\\generalmills\\websample\\built\\tests\\sample_test.js",
+          "file": "\\built\\tests\\sample_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite",
+              "fullTitle": "WebDriver sample tests \"before all\" hook: codeceptjs.beforeSuite",
+              "timedOut": false,
+              "duration": 36873,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "4f455b19-033e-40a1-8c69-4535b5195e11",
+              "parentUUID": "271ca83c-048f-4963-92c8-a1948cc9de00",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before",
+              "fullTitle": "WebDriver sample tests \"before each\" hook: codeceptjs.before",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "c50a1e1e-656d-404f-a899-f598f476ff86",
+              "parentUUID": "271ca83c-048f-4963-92c8-a1948cc9de00",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite",
+              "fullTitle": "WebDriver sample tests \"after all\" hook: codeceptjs.afterSuite",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "117c532a-0edf-4fe1-90c6-7ae180c47f0b",
+              "parentUUID": "271ca83c-048f-4963-92c8-a1948cc9de00",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs",
+              "fullTitle": "WebDriver sample tests \"after each\" hook: finalize codeceptjs",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "a1739f9b-a37f-4ccb-b0ea-44c3e7970e77",
+              "parentUUID": "271ca83c-048f-4963-92c8-a1948cc9de00",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Testcase 01: Check Cart items displayed correctly",
+              "fullTitle": "WebDriver sample tests: Testcase 01: Check Cart items displayed correctly",
+              "timedOut": false,
+              "duration": 10152,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"Testcase_01__Check_Cart_items_displayed_correctly.failed.png\"",
+              "code": "await homePage_1.default.navigateTo();\nawait homePage_1.default.selectWomenTab();\nawait productPage_1.default.addToCart(firstProduct);\nawait productPage_1.default.addToCart(secondProduct, cartCount);\nawait productPage_1.default.openShoppingCart();\nawait cartPage_1.default.checkItemDisplayed(firstProduct);\nawait cartPage_1.default.checkItemDisplayed(secondProduct);",
+              "err": {
+                "message": "MethodNotAvailableError: Method 'maximize' is not available in helper 'Appium'.",
+                "estack": "Method 'maximize' is not available in helper 'Appium'.\n\nScenario Steps:\n\n- gondola.maximize() at HomePage.navigateTo (built\\pages\\gondola_test_site\\homePage.js:21:35)\n- gondola.navigate(\"https://demo.gondolatest.com\") at HomePage.navigateTo (built\\pages\\gondola_test_site\\homePage.js:20:35)\n\n",
+                "diff": null
+              },
+              "uuid": "cc019aae-024d-4879-8bd6-fcde3e2b76e8",
+              "parentUUID": "271ca83c-048f-4963-92c8-a1948cc9de00",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Testcase 02: Check Payment button is enabled when user inputs valid information.",
+              "fullTitle": "WebDriver sample tests: Testcase 02: Check Payment button is enabled when user inputs valid information.",
+              "timedOut": false,
+              "duration": 4323,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"Testcase_02__Check_Payment_button_is_enabled_when_user_inputs_valid_information..failed.png\"",
+              "code": "await homePage_1.default.navigateTo();\nawait homePage_1.default.selectWomenTab();\nawait productPage_1.default.addToCart(firstProduct);\nawait productPage_1.default.addToCart(secondProduct, cartCount);\nawait productPage_1.default.openShoppingCart();\nawait cartPage_1.default.fillPaymentInfo(validPayment);\nawait cartPage_1.default.checkPaymentButtonEnabled();",
+              "err": {
+                "message": "MethodNotAvailableError: Method 'maximize' is not available in helper 'Appium'.",
+                "estack": "Method 'maximize' is not available in helper 'Appium'.\n\nScenario Steps:\n\n- gondola.maximize() at HomePage.navigateTo (built\\pages\\gondola_test_site\\homePage.js:21:35)\n- gondola.navigate(\"https://demo.gondolatest.com\") at HomePage.navigateTo (built\\pages\\gondola_test_site\\homePage.js:20:35)\n\n",
+                "diff": null
+              },
+              "uuid": "673d0dc2-eb1c-4855-8cb8-f998a973b317",
+              "parentUUID": "271ca83c-048f-4963-92c8-a1948cc9de00",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cc019aae-024d-4879-8bd6-fcde3e2b76e8",
+            "673d0dc2-eb1c-4855-8cb8-f998a973b317"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 14475,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[Chrome]GeneralMills_demo_report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results/GeneralMills/Chrome",
+        "inlineAssets": true,
+        "timestamp": "isoDateTime",
+        "reportFilename": "[Chrome]GeneralMills_demo_report",
+        "autoOpen": true,
+        "reportPageTitle": "[Chrome]GeneralMills_demo_report"
+      },
+      "version": "4.1.0"
+    }
+  }
+}

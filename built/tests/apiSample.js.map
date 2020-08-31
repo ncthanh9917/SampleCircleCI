@@ -1,0 +1,1 @@
+{"version":3,"file":"apiSample.js","sourceRoot":"","sources":["../../src/tests/apiSample.ts"],"names":[],"mappings":";;AAAA,yCAA0D;AAC1D,sBAAU,CAAC,sBAAsB,CAAC,CAAC;AAEnC,oBAAQ,CAAC,oBAAoB,EAAE,KAAK,IAAI,EAAE;IACtC,IAAI,MAAM,GAAG,MAAM,mBAAO,CAAC,cAAc,CAAC,+BAA+B,EAAE,EAAE,CAAC,CAAC;IAC/E,MAAM,mBAAO,CAAC,mBAAmB,CAAC,MAAM,EAAE,GAAG,CAAC,CAAC;AACnD,CAAC,CAAC,CAAC"}

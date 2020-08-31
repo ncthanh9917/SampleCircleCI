@@ -1,0 +1,203 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-08-28T02:25:07.110Z",
+    "end": "2020-08-28T02:26:26.513Z",
+    "duration": 79403,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "5a8b94f0-89dd-49f5-9414-3f9ba725cbce",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1a28b60a-3d4e-47ab-8236-3cdbf21c6a72",
+          "title": "WebDriver sample tests",
+          "fullFile": "f:\\GondolaProjects\\generalmills\\websample\\built\\tests\\sample_test.js",
+          "file": "\\built\\tests\\sample_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite for \"Testcase 01: Check Cart items displayed correctly\"",
+              "fullTitle": "WebDriver sample tests \"before all\" hook: codeceptjs.beforeSuite for \"Testcase 01: Check Cart items displayed correctly\"",
+              "timedOut": false,
+              "duration": 79368,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {
+                "message": "Error: Can't connect to WebDriver.\nError: Failed to create session.\nAn unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome '69.0.3497'. See https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/web/chromedriver.md for more details. You could also try to enable automated chromedrivers download server feature\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
+                "estack": "Can't connect to WebDriver.\nError: Failed to create session.\nAn unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome '69.0.3497'. See https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/web/chromedriver.md for more details. You could also try to enable automated chromedrivers download server feature\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
+                "diff": null
+              },
+              "uuid": "43ae956d-eeb0-4e3f-969c-7e8b2f658612",
+              "parentUUID": "1a28b60a-3d4e-47ab-8236-3cdbf21c6a72",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before",
+              "fullTitle": "WebDriver sample tests \"before each\" hook: codeceptjs.before",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "eb83e230-4e38-41f7-b711-a91ac6f121b6",
+              "parentUUID": "1a28b60a-3d4e-47ab-8236-3cdbf21c6a72",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite",
+              "fullTitle": "WebDriver sample tests \"after all\" hook: codeceptjs.afterSuite",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "3356ef49-890d-459f-9ea4-85b3e728ee6f",
+              "parentUUID": "1a28b60a-3d4e-47ab-8236-3cdbf21c6a72",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs",
+              "fullTitle": "WebDriver sample tests \"after each\" hook: finalize codeceptjs",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "9c0ab5bb-98bd-42d8-a1a8-949fe95d45d3",
+              "parentUUID": "1a28b60a-3d4e-47ab-8236-3cdbf21c6a72",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Testcase 01: Check Cart items displayed correctly",
+              "fullTitle": "WebDriver sample tests: Testcase 01: Check Cart items displayed correctly",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await homePage_1.default.navigateTo();\nawait homePage_1.default.selectWomenTab();\nawait productPage_1.default.addToCart(firstProduct);\nawait productPage_1.default.addToCart(secondProduct, cartCount);\nawait productPage_1.default.openShoppingCart();\nawait cartPage_1.default.checkItemDisplayed(firstProduct);\nawait cartPage_1.default.checkItemDisplayed(secondProduct);",
+              "err": {},
+              "uuid": "cd605dba-7d21-4052-a583-091a076845d0",
+              "parentUUID": "1a28b60a-3d4e-47ab-8236-3cdbf21c6a72",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Testcase 02: Check Payment button is enabled when user inputs valid information.",
+              "fullTitle": "WebDriver sample tests: Testcase 02: Check Payment button is enabled when user inputs valid information.",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await homePage_1.default.navigateTo();\nawait homePage_1.default.selectWomenTab();\nawait productPage_1.default.addToCart(firstProduct);\nawait productPage_1.default.addToCart(secondProduct, cartCount);\nawait productPage_1.default.openShoppingCart();\nawait cartPage_1.default.fillPaymentInfo(validPayment);\nawait cartPage_1.default.checkPaymentButtonEnabled();",
+              "err": {},
+              "uuid": "cf06bb70-a6a9-4cd6-b3fe-b32fe809d22d",
+              "parentUUID": "1a28b60a-3d4e-47ab-8236-3cdbf21c6a72",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "cd605dba-7d21-4052-a583-091a076845d0",
+            "cf06bb70-a6a9-4cd6-b3fe-b32fe809d22d"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[Chrome]GeneralMills_demo_report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results/GeneralMills/Chrome",
+        "inlineAssets": true,
+        "timestamp": "isoDateTime",
+        "reportFilename": "[Chrome]GeneralMills_demo_report",
+        "autoOpen": true,
+        "reportPageTitle": "[Chrome]GeneralMills_demo_report"
+      },
+      "version": "4.1.0"
+    }
+  }
+}

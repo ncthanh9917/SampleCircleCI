@@ -1,0 +1,203 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-08-28T02:43:39.946Z",
+    "end": "2020-08-28T02:45:12.672Z",
+    "duration": 92726,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "cfc3fd33-35af-46e1-9bc0-e1a710f4be6b",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8c42abe4-5338-400d-b0e8-0f06a605f86e",
+          "title": "WebDriver sample tests",
+          "fullFile": "f:\\GondolaProjects\\generalmills\\websample\\built\\tests\\sample_test.js",
+          "file": "\\built\\tests\\sample_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite for \"Testcase 01: Check Cart items displayed correctly\"",
+              "fullTitle": "WebDriver sample tests \"before all\" hook: codeceptjs.beforeSuite for \"Testcase 01: Check Cart items displayed correctly\"",
+              "timedOut": false,
+              "duration": 92652,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {
+                "message": "Error: Can't connect to WebDriver.\nError: Failed to create session.\nread ECONNRESET\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
+                "estack": "Can't connect to WebDriver.\nError: Failed to create session.\nread ECONNRESET\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
+                "diff": null
+              },
+              "uuid": "7be50ebd-62ab-406c-ab5f-292dce4ce90d",
+              "parentUUID": "8c42abe4-5338-400d-b0e8-0f06a605f86e",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before",
+              "fullTitle": "WebDriver sample tests \"before each\" hook: codeceptjs.before",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "79041e99-2708-4253-99d1-6e2d74af0a25",
+              "parentUUID": "8c42abe4-5338-400d-b0e8-0f06a605f86e",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite",
+              "fullTitle": "WebDriver sample tests \"after all\" hook: codeceptjs.afterSuite",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "63281a95-6ddb-421d-b3a5-eebfb1d1e45e",
+              "parentUUID": "8c42abe4-5338-400d-b0e8-0f06a605f86e",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs",
+              "fullTitle": "WebDriver sample tests \"after each\" hook: finalize codeceptjs",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "2c8b92f7-161d-4fad-b5b6-3d95eeede680",
+              "parentUUID": "8c42abe4-5338-400d-b0e8-0f06a605f86e",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Testcase 01: Check Cart items displayed correctly",
+              "fullTitle": "WebDriver sample tests: Testcase 01: Check Cart items displayed correctly",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await homePage_1.default.navigateTo();\nawait homePage_1.default.selectWomenTab();\nawait productPage_1.default.addToCart(firstProduct);\nawait productPage_1.default.addToCart(secondProduct, cartCount);\nawait productPage_1.default.openShoppingCart();\nawait cartPage_1.default.checkItemDisplayed(firstProduct);\nawait cartPage_1.default.checkItemDisplayed(secondProduct);",
+              "err": {},
+              "uuid": "06795cd3-edec-4ba3-b5e7-ed191f4ea2f7",
+              "parentUUID": "8c42abe4-5338-400d-b0e8-0f06a605f86e",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Testcase 02: Check Payment button is enabled when user inputs valid information.",
+              "fullTitle": "WebDriver sample tests: Testcase 02: Check Payment button is enabled when user inputs valid information.",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await homePage_1.default.navigateTo();\nawait homePage_1.default.selectWomenTab();\nawait productPage_1.default.addToCart(firstProduct);\nawait productPage_1.default.addToCart(secondProduct, cartCount);\nawait productPage_1.default.openShoppingCart();\nawait cartPage_1.default.fillPaymentInfo(validPayment);\nawait cartPage_1.default.checkPaymentButtonEnabled();",
+              "err": {},
+              "uuid": "fbcf32c0-dcde-459b-a79b-14ea4d234d84",
+              "parentUUID": "8c42abe4-5338-400d-b0e8-0f06a605f86e",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "06795cd3-edec-4ba3-b5e7-ed191f4ea2f7",
+            "fbcf32c0-dcde-459b-a79b-14ea4d234d84"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[Chrome]GeneralMills_demo_report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results/GeneralMills/Chrome",
+        "inlineAssets": true,
+        "timestamp": "isoDateTime",
+        "reportFilename": "[Chrome]GeneralMills_demo_report",
+        "autoOpen": true,
+        "reportPageTitle": "[Chrome]GeneralMills_demo_report"
+      },
+      "version": "4.1.0"
+    }
+  }
+}
