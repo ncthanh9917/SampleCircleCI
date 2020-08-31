@@ -2,15 +2,11 @@ version: 2.1
 
 orbs:
   node: circleci/node@4.0.0
+  win: circleci/windows@2.2.0
 
 jobs:
   build:
-    machine:
-      image: windows-server-2019-nvidia:stable
-    parameters:
-      browser:
-        type: string
-        default: chrome
+    executor: win/default
     steps:
       - checkout
       #- node/install:
