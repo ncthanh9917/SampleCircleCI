@@ -19,7 +19,7 @@ services:
       - G_LS_TOKEN=${G_LS_TOKEN}
       - BROWSER=${BROWSER}
     volumes: 
-      - ..:/src
+      - .:/src
     command: npm run test -- --override "{\"helpers\":{\"WebDriver\":{\"browser\":\"$BROWSER\"}}}"
     #command: curl http://webdriver:4444/wd/hub/status
     working_dir: /src
@@ -29,4 +29,4 @@ services:
     volumes: 
         - ..:/src
     command: npm run compile
-    working_dir: 
+    working_dir: /src
