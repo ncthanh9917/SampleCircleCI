@@ -26,7 +26,5 @@ services:
 
   gondola.builder:
     image: node:lts
-    volumes: 
-        - ..:/src
     command: /build.sh
     working_dir: /src
