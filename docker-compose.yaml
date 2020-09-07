@@ -29,7 +29,7 @@ services:
     volumes: 
         - ..:/src
     command: 
-      - pwd
+      - cd ..
       - yarn
       - yarn generate
       - npm ci
