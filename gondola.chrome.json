@@ -37,9 +37,9 @@
             "reportDir": "results/Chrome",
             "inlineAssets": true,
             "timestamp": "isoDateTime",
-            "reportFilename": "[Chrome]GeneralMills_demo_report",
+            "reportFilename": "[Chrome]Demo_report",
             "autoOpen": true,
-            "reportPageTitle": "[Chrome]GeneralMills_demo_report"
+            "reportPageTitle": "[Chrome]Demo_report"
         }
     },
     "name": "ts_example_firefox"

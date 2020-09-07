@@ -48,9 +48,9 @@
             "reportDir": "results/MobileWeb",
             "inlineAssets": true,
             "timestamp": "isoDateTime",
-            "reportFilename": "[MobileWeb]GeneralMills_demo_report",
+            "reportFilename": "[MobileWeb]Demo_report",
             "autoOpen": true,
-            "reportPageTitle": "[MobileWeb]GeneralMills_demo_report"
+            "reportPageTitle": "[MobileWeb]Demo_report"
         }
     },
     "name": "ts_example_mobile_web"

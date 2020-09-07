@@ -41,12 +41,12 @@
     },
     "mocha": {
         "reporterOptions": {
-            "reportDir": "result/GeneralMills/EdgeChromium",
+            "reportDir": "result/Demo/EdgeChromium",
             "inlineAssets": true,
             "timestamp": "isoDateTime",
-            "reportFilename": "[EdgeChromium]GeneralMills_demo_report",
+            "reportFilename": "[EdgeChromium]Demo_report",
             "autoOpen": true,
-            "reportPageTitle": "[EdgeChromium] GeneralMills_demo_report"
+            "reportPageTitle": "[EdgeChromium]Demo_report"
         }
     },
     "name": "ts_example_chrome"

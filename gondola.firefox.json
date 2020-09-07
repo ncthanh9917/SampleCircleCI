@@ -37,9 +37,9 @@
             "reportDir": "results/FireFox",
             "inlineAssets": true,
             "timestamp": "isoDateTime",
-            "reportFilename": "[Firefox]GeneralMills_demo_report",
+            "reportFilename": "[Firefox]Demo_report",
             "autoOpen": true,
-            "reportPageTitle": "[Firefox]GeneralMills_demo_report"
+            "reportPageTitle": "[Firefox]Demo_report"
         }
     },
     "name": "ts_example_firefox"

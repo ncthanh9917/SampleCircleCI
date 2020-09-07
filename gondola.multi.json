@@ -40,9 +40,9 @@
             "reportDir": "results/Multi",
             "inlineAssets": true,
             "timestamp": "isoDateTime",
-            "reportFilename": "[Multi]GeneralMills_demo_report",
+            "reportFilename": "[Multi]demo_report",
             "autoOpen": true,
-            "reportPageTitle": "[Multi]GeneralMills_demo_report"
+            "reportPageTitle": "[Multi]demo_report"
         }
     },
     "name": "ts_example_multi",
