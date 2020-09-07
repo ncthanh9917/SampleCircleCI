@@ -33,4 +33,4 @@ services:
       - yarn generate
       - npm ci
       - npm run compile
-    working_dir: /project
+    working_dir: ./dir
