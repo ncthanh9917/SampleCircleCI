@@ -27,6 +27,6 @@ services:
   gondola.builder:
     image: node:lts
     volumes: 
-        - ..:/home/circleci/project
-    command: npm run compile
-    working_dir: /home/circleci/project
+        - ..:/src
+    command: /build.sh
+    working_dir: /src
