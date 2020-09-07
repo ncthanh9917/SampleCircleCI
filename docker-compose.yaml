@@ -29,8 +29,9 @@ services:
     volumes: 
         - ..:/src
     command: 
+      - ls
       - yarn
       - yarn generate
       - npm ci
       - npm run compile
-    working_dir: /home/circleci/project
+    working_dir: .
