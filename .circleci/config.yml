@@ -2,23 +2,43 @@ version: 2.1
 
 orbs:
   node: circleci/node@4.0.0
-  win: circleci/windows@2.4.0
 
 jobs:
-  build:
-    executor: win/default
-    
+  test:
+    machine:
+      image: 'circleci/classic:latest'
+    parameters:
+      browser:
+        type: string
+        default: chrome
     steps:
       - checkout
-      - run:
-          name: "Install Chrome"
-          shell: powershell.exe
-          command: |
-            $LocalTempDir = $env:TEMP; $ChromeInstaller = "ChromeInstaller.exe"; (new-object System.Net.WebClient).DownloadFile('http://dl.google.com/chrome/install/375.126/chrome_installer.exe', "$LocalTempDir\$ChromeInstaller"); & "$LocalTempDir\$ChromeInstaller" /silent /install; $Process2Monitor = "ChromeInstaller"; Do { $ProcessesFound = Get-Process | ?{$Process2Monitor -contains $_.Name} | Select-Object -ExpandProperty Name; If ($ProcessesFound) { "Still running: $($ProcessesFound -join ', ')" | Write-Host; Start-Sleep -Seconds 2 } else { rm "$LocalTempDir\$ChromeInstaller" -ErrorAction SilentlyContinue -Verbose } } Until (!$ProcessesFound)
-
       #- node/install:
-      #    install-yarn: true 
+      #    install-yarn: true
       #    lts: true
-      #- run: npm --versions
-      #- run: yarn --version
-      - run: npm run test:chrome -- --licenseToken 9338F7CF223C0DD1D72E7A074425D017A2964CD20444F8227C23571CC674947C
+      - run:
+          name: Build souce code & compile test project
+          command: docker-compose run --rm gondola.builder
+          working_directory: tests
+      - run:
+          name: run all tests
+          command: docker-compose run --rm gondola.tester
+          working_directory: tests
+          environment:
+            BROWSER: << parameters.browser >>
+      - store_test_results:
+          path: tests/results/
+      - store_artifacts:
+          path: tests/results
+          destination: results
+
+workflows:
+  test:
+    jobs:
+      - test:
+          context: Gondola License
+          matrix:
+            parameters:
+              browser:
+                - chrome
+                - firefox
