@@ -28,5 +28,5 @@ services:
     image: node:lts
     volumes: 
         - ..:/src
-    command: /.circleci/build.sh
+    command: npm run compile
     working_dir: /src
