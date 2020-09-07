@@ -20,7 +20,7 @@ jobs:
       - run: ls
       - run:
           name: Build souce code & compile test project
-          command: docker-compose run --rm -v $(pwd) gondola.builder
+          command: docker-compose run --rm gondola.builder
       - run:
           name: run all tests
           command: docker-compose run --rm gondola.tester

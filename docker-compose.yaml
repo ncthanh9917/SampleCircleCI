@@ -21,10 +21,12 @@ services:
     volumes: 
       - .:/src
     command: npm run test -- --override "{\"helpers\":{\"WebDriver\":{\"browser\":\"$BROWSER\"}}}"
-    #command: curl http://webdriver:4444/wd/hub/status 
+    #command: curl http://webdriver:4444/wd/hub/status
     working_dir: /src
 
   gondola.builder:
     image: node:lts
-    command: /build.sh
+    volumes: 
+        - ..:/src
+    command: /src/.circleci/build.sh
     working_dir: /src

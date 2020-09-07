@@ -9,9 +9,9 @@ yarn generate
 # Prepare test scripts
 echo "==================="
 echo "Prepare test scripts"
-cd ..
 npm ci
 npm run compile
+cd ..
 
 echo "==================="
 echo "Finish build"
