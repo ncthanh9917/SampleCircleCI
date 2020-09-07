@@ -20,7 +20,6 @@ services:
       - BROWSER=${BROWSER}
     command: npm run test -- --override "{\"helpers\":{\"WebDriver\":{\"browser\":\"$BROWSER\"}}}"
     #command: curl http://webdriver:4444/wd/hub/status
-    working_dir: /src
 
   gondola.builder:
     image: node:lts
