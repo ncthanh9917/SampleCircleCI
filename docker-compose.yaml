@@ -28,5 +28,9 @@ services:
     image: node:lts
     volumes: 
         - ..:/src
-    command: npm run compile
+    command: 
+      - yarn
+      - yarn generate
+      - npm ci
+      - npm run compile
     working_dir: /src
