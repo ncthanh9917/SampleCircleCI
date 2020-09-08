@@ -2,11 +2,15 @@ version: 2.1
 
 orbs:
   node: circleci/node@4.0.0
+  win: circleci/windows@2.2.0
+
 
 jobs:
   test:
-    machine:
-      image: 'circleci/classic:latest'
+    executor:
+      name: win/default
+    #machine:
+    #  image: 'circleci/classic:latest'
     parameters:
       browser:
         type: string
