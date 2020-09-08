@@ -13,6 +13,5 @@ npm i
 npm run compile
 cd ..
 
-
 echo "==================="
 echo "Finish build"
