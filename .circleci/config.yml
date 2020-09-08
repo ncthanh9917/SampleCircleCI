@@ -7,10 +7,8 @@ orbs:
 
 jobs:
   test:
-    executor:
-      name: win/default
-    #machine:
-    #  image: 'circleci/classic:latest'
+    machine:
+      image: 'circleci/classic:latest'
     parameters:
       browser:
         type: string
