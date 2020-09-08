@@ -13,10 +13,9 @@ jobs:
         default: chrome
     steps:
       - checkout
-      - run: sudo .circleci/build.sh
-      #- run:
-      #    name: Build souce code & compile test project
-      #    command: docker-compose run --rm gondola.builder
+      - run:
+          name: Build souce code & compile test project
+          command: docker-compose run --rm gondola.builder
       - run:
           name: run all tests
           command: docker-compose run --rm gondola.tester
