@@ -9,7 +9,7 @@ yarn generate
 # Prepare test scripts
 echo "==================="
 echo "Prepare test scripts"
-npm ci
+npm i
 npm run compile
 cd ..
 
