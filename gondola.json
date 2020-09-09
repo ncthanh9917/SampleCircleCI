@@ -35,27 +35,13 @@
         }
     },
     "mocha": {
-        "reporter": "mocha-multi",
         "reporterOptions": {
-            "mocha-junit-reporter": {
-                "stdout": "-",
-                "options": {
-                    "mochaFile": "./results/xunit-result.xml",
-                    "attachments": true
-                },
-                "attachments": true
-            },
-            "mochawesome": {
-                "stdout": "-",
-                "options": {
-                    "reportDir": "results",
-                    "inlineAssets": true,
-                    "timestamp": "isoDateTime",
-                    "reportFilename": "gondola",
-                    "autoOpen": true,
-                    "reportPageTitle": "Gondola Test Result"
-                }
-            }
+            "reportDir": "results",
+            "inlineAssets": true,
+            "timestamp": "isoDateTime",
+            "reportFilename": "Demo_report",
+            "autoOpen": true,
+            "reportPageTitle": "Demo_report"
         }
     },
     "multiple": {

@@ -23,8 +23,8 @@ jobs:
           command: docker-compose run --rm gondola.tester
           environment:
             BROWSER: << parameters.browser >>
-      - store_test_results:
-          path: results/
+      #- store_test_results:
+      #    path: results/
       - store_artifacts:
           path: results/
           destination: results
