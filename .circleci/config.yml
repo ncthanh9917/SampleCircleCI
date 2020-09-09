@@ -15,7 +15,6 @@ jobs:
         default: chrome
     steps:
       - checkout
-      - run: ls
       - run:
           name: Build souce code & compile test project
           command: docker-compose run --rm gondola.builder
@@ -40,3 +39,5 @@ workflows:
               browser:
                 - chrome
                 - firefox
+                - edge
+                - multi
