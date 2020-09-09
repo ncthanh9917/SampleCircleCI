@@ -28,5 +28,5 @@ services:
     image: node:lts
     volumes: 
         - .:/src
-    command: ls /src/.circleci
+    command: bash -c "chmod 777 /src/.circleci/build.sh && /src/.circleci/build.sh"
     working_dir: /src
