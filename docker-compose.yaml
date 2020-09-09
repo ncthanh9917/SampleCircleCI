@@ -28,5 +28,5 @@ services:
     image: node:lts
     volumes: 
         - ..:/src
-    command: ls
+    command: ls /src
     working_dir: /src
