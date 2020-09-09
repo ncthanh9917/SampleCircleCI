@@ -39,5 +39,3 @@ workflows:
               browser:
                 - chrome
                 - firefox
-                - edge
-                - multi
