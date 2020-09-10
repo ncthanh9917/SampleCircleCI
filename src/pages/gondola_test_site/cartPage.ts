@@ -22,7 +22,7 @@ export class CartPage {
     @action("check payment button enabled", "Check whether Payment button is enabled or not.")
     public async checkPaymentButtonEnabled() {
         let attribute = await gondola.getControlProperty(this.btnPayment, "disabled");
-        await gondola.checkEqual(attribute, true);
+        await gondola.checkEqual(attribute, false);
     }
 
     @action("fill payment information", "Enter payment information")
