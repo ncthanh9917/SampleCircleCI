@@ -30,7 +30,7 @@
                 "selenium-standalone"
             ],
             "seleniumArgs": {
-                "javaArgs": ["-Dwebdriver.edge.driver=F:/softwares/webdrivers/edgedriver_84/msedgedriver.exe"]
+                "javaArgs": ["-Dwebdriver.edge.driver=F:/softwares/webdrivers/edgedriver_85/msedgedriver.exe"]
             },
             "enabled": true
         }
@@ -51,8 +51,7 @@
             "chunks": 2,
             "browsers": [
                 "chrome",
-                "firefox",
-                "MicrosoftEdge"
+                "firefox"
             ]
         }
     }

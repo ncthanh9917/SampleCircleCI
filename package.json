@@ -13,6 +13,7 @@
         "test:headless": "./node_modules/.bin/gondola -c gondola.headless.json run --steps --reporter mochawesome",
         "test:firefox": "./node_modules/.bin/gondola -c gondola.firefox.json run --steps --reporter mochawesome",
         "test:edge": "./node_modules/.bin/gondola -c gondola.edge.json run --steps --reporter mochawesome",
+        "test:mobileweb": "./node_modules/.bin/gondola -c gondola.mobileweb.json run --steps --reporter mochawesome",
         "test:multi": "./node_modules/.bin/gondola -c gondola.multi.json run-multiple regression --steps --all --reporter mochawesome"
     },
     "author": "",
