@@ -17,6 +17,9 @@
                 "pageLoad": 10000
             }
         },
+        "REST": {
+            "require": "gondolajs/built/helper/RestApi"
+        },
         "Mochawesome": {}
     },
     "include": {},

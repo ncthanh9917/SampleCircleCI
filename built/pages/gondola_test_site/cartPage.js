@@ -25,7 +25,7 @@ let CartPage = class CartPage {
     }
     async checkPaymentButtonEnabled() {
         let attribute = await gondolajs_1.gondola.getControlProperty(this.btnPayment, "disabled");
-        await gondolajs_1.gondola.checkEqual(attribute, false);
+        await gondolajs_1.gondola.checkEqual(attribute, true);
     }
     async fillPaymentInfo(payment) {
         await gondolajs_1.gondola.waitForElement(this.txtPaymentEmail, 5);
